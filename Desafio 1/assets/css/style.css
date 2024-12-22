@@ -1,0 +1,256 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+
+background-color: white;
+display: flex;
+
+}
+
+header {
+
+background-color: whitesmoke;
+height: 100vh;
+width: 15vw;
+border: 1px solid #e8ebe4;
+display: flex;
+flex-direction: column;
+
+}
+
+
+
+
+main {
+
+background-color: whitesmoke;
+display: flex;
+width: 85vw;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+overflow:scroll;
+
+}
+
+
+div {
+
+display: flex;
+
+}
+
+
+p {
+
+margin: 0;
+text-align: center;
+  
+}
+ 
+ul {
+    
+list-style: none;
+
+}
+  
+
+li {
+
+background-color: white;
+border: 1px solid #e8ebe4;
+display: flex;
+flex-direction: row;
+padding: 15px 20px; 
+}
+
+
+
+.contenedor-imagen {
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;  
+width: 60px;   
+overflow: hidden;  
+    
+}
+
+.imagen {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100%;  
+width: 100%;   
+border-radius: 50%;  
+object-fit: cover;  
+
+}
+
+
+div.perfil {
+
+width: 50px;
+height: 50px;
+border-radius: 90px;
+ 
+}
+
+
+li.perf {
+
+justify-content: space-between;
+    
+}
+  
+.ordernar {
+
+display: flex;
+flex-direction: column;
+text-align: right;
+justify-content: center; 
+text-align: left; 
+margin-left: 15px;
+
+}
+  
+button {
+
+margin: auto;
+background-color: #A491D2;
+justify-self: center;
+padding: 15px 40px;
+color: white;
+border: none;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+    
+}
+  
+.libutton{
+
+display: flex; 
+justify-content: center; 
+padding: 40px 25px; 
+  
+}
+ 
+
+.icons {
+
+display: flex;
+justify-content: center;
+gap: 15px; 
+flex-grow: 1;
+font-size: 20px;
+
+}
+
+
+
+
+.icons i {
+
+font-size: 1.2rem;
+color: #333;
+cursor: pointer;
+
+}
+
+.parrafo {
+
+display: flex;
+flex-direction: column;  
+
+
+}
+
+.profile {
+
+display: flex;
+flex-direction: column;
+width: 110px;
+margin-left: 8px;
+ 
+
+}
+
+.container {
+
+display: flex;
+align-items: center;
+width: 100%;
+
+
+
+}
+
+.imagenp {
+
+width: 50px ;
+ height: 50px ;
+border-radius: 70px;
+
+}
+
+
+main img{
+
+width: 400px;
+height:400px ;
+
+}
+
+h1 {
+
+font-family: 'Roboto', sans-serif; 
+font-weight: 400;  
+font-size: 50px;
+color: #444749;
+
+}
+
+main p {
+
+font-family: 'Roboto', sans-serif;  
+font-weight: 400;
+color: #444749;
+
+}
+
+
+
+.p1 {
+
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+
+}
+
+.p2 {
+
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+color: #444749;
+
+}
+
+.m-all {
+
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+
+}
+
+.mp {
+
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+
+}
