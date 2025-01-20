@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas: 
+        "headermob"
+        "ordenar-container"
+        "card"
+        "pagination"
+        "footer";
+}
+
+
+.tituloico {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 15px;
+}
+
+.tituloico .mdi-menu {
+    margin-left: auto;
+    font-size:  24px;
+}
+
+header {
+    background-color: rgb(42, 42, 215);
+}
+
+.ordenar-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f0f0f0;
+    padding: 10px;
+
+}
+
+select {
+    width: 90%;
+    padding: 5px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    width: 300px; 
+    background-color: white;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    margin: 20px auto; 
+    text-align: center;
+    padding: 10px; 
+}
+
+.card img {
+
+    width: auto; 
+    height: auto; 
+    object-fit: cover; 
+
+}
+
+.card p{
+
+margin-top: 15px;
+
+}
+
+.card button {
+    max-width: 100px;
+    padding: 15px 10px; 
+    background-color: blue; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.pagination {
+
+text-align: center;
+margin-top: 30px;
+margin-bottom:  40px;
+
+}
+
+
+.pagination ul {
+
+list-style-type: none;
+padding: 0;
+display: flex;
+justify-content: center;
+
+}
+
+.pagination li{
+
+margin: 0 ;
+
+}
+
+.pagination a {
+    text-decoration: none;
+    color: blue;
+    padding: 8px 14px;
+    border: 1px solid rgb(196, 192, 192);
+    border-radius: 2px; 
+    font-size: 14px;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    color: white;
+    background-color: blue;
+    padding: 20px 0; 
+}
+    
+footer .social-icons {
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+}
+    
+footer i {
+        font-size: 30px; 
+        color: white;
+}
+
+
+@media screen and (max-width: 576px) {
+
+.escritorio { visibility: hidden;
+    height: 0;
+}
+
+.navizq {  visibility: hidden;
+    height: 0;
+}
+
+.pagination { visibility: hidden;
+    height: 0;
+}
+
+.pagination1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom:  40px;     
+}
+        
+        
+.pagination1 ul {     
+ list-style-type: none;
+ padding: 0;
+ display: flex;
+ justify-content: center;
+}
+        
+.pagination1 li{       
+margin: 0 ;
+        
+}
+        
+.pagination1 a {
+    text-decoration: none;
+    color: blue;
+    padding: 8px 14px;
+    border: 1px solid rgb(196, 192, 192);
+    border-radius: 2px; 
+    font-size: 14px;
+}
+
+
+}
+
+@media screen and (min-width: 576px) {
+
+
+.pagination1 {
+    visibility: hidden; 
+    height: 0;
+}
+
+
+body {
+    grid-template-areas:
+        "nav ordenar-container"
+        "nav main"
+        "footer footer";
+    grid-template-columns: 200px 1fr; 
+}
+
+  
+.navizq {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+.navizq ul {
+    padding-left: 0;
+}
+
+.navizq li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.navizq a {
+    color: white;
+    text-decoration: none;
+}
+
+    
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: blue;
+    padding: 20px 0;
+    text-align: center;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+}
+
+
+
+
